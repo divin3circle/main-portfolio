@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Portfolio</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/ac0a9c0fc3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logo" src="images/Logo7.png" alt="My-Logo">
+                <ul id="sidemenu">
+                    <li id="nav1"><a href="#header">Home</a></li>
+                    <li id="nav1"><a href="#about">About</a></li>
+                    <li id="nav1"><a href="#services">Services</a></li>
+                    <li id="nav1"><a href="#port">Portfolio</a></li>
+                    <li id="nav1"><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <t>Front <span>End</span> Web Developer</t>
+                <h1>Hi, I'm <span>Sylus</span><br>Abel From Kenya</h1>
+            </div>
+        </div>
+    </div>
+    <!--About Section -->
+    <div id="about">
+        <div class="container-about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img id="userpng" src="images/user.jpg" alt="User-image"> 
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub">About Me</h1>
+                    <p>Web development is not only about talent and creativity, it is also about passion. I'm a positive, enthusiastic and passionate Front End Web Developer with a diverse set of skills, qualities and attributes. The passion I have in this field has pushed me learn new skills and  be up to date with current developments. Apart from Web Development, I'm also an expert in Technical Writting, a field that  have worked in for years. The set of skills and attributes that have aquired from both fields enable me to work both as an individual or part of a team.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('exp')">Experience</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                    </div>
+                    <div class="tab-cont active-tab" id="skills">
+                        <ul>
+                            <li><span>Front End</span><br>Web Developer</li>
+                            <li><span>Technical Writting</span><br>Article Writting</li>
+                            <li><span>Data Science</span><br>Data Engineer</li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont" id="exp">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Individual Clients/Upwork</li>
+                            <li><span>2022 - Currrent</span><br>Own Projects</li>
+                            <li><span>2022 - Current </span><br>Own Projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont" id="edu">
+                        <ul>
+                            <li><span>2022</span><br>ALX Arica/Self Taught</li>
+                            <li><span>2022</span><br>Writer's Bay</li>
+                            <li><span>2022</span><br>Data Science-Data Camp Org</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Services-->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-html5"></i> <i class="fa-brands fa-css3-alt"></i> <i class="fa-brands fa-square-js"></i>
+                    <h2>Web Design</h2>
+                    <p>Watch your website come to life with creative and intrinsic design that will attract tons of customers</p>
+                    <a href="#">Learn more.</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-feather"></i>
+                    <h2>Technical Writting</h2>
+                    <p>Quality articles have immense power when it comes attracting readers. Let me do the heavy lifting for you</p>
+                    <a href="#">Learn more.</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Data Science</h2>
+                    <p>The power wielded by data is immense. Having a data scientist to analyze the data helps you realize this power</p>
+                    <a href="#">Learn more.</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Portfolio Section-->
+    <div id="port">
+        <div class="container">
+            <h1 class="sub-title" style="font-size: 60px;">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img id="work" src="images/wk1.jpg">
+                    <div class="layer">
+                        <h3>Website Project</h3>
+                        <p>Personal Website project I</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="work" src="images/wk4.jpg">
+                    <div class="layer">
+                        <h3>Website Project</h3>
+                        <p>Personal Website project II</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img id="work" src="images/wk3.jpg">
+                    <div class="layer">
+                        <h3>WebsiteProject</h3>
+                        <p>Personal Website project III</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/divin3circle" class="btn">See more</a>
+        </div>
+    </div>
+    <!--Contact Section-->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> silasabel330@gmail.com</p>
+                    <p><i class="fa-solid fa-mobile"></i> +254 701 838690</p>
+                    <div class="sc-icn">
+                        <a href="https://www.secure.instagram.com/sylus.abel/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/Silasabel5"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://github.com/divin3circle"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://web.facebook.com/sylus.abel"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                    <a href="images/My CV.docx" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Enter Your Name" required>
+                        <input type="email" name="Email" placeholder="Enter Email" required>
+                        <textarea name="Message" rows="6" placeholder="Talk to Me"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2023 <i class="fa-solid fa-s"></i>ylus <i class="fa-solid fa-a"></i>bel ™. Project Venus</p>
+        </div>
+    </div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabconts = document.getElementsByClassName("tab-cont");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcont of tabconts){
+                tabcont.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+   
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxTvuuOQLHXqPme0MWYpJFMvg_fUYbHDGvcGeSG9tD7wU7mYVXzWkpIj1eXcCsMe3k1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent! I'll get back to you ASAP!"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                }, 3000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
