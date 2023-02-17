@@ -323,6 +323,9 @@ nav .fa-solid{
 }
 
 @media only screen and (max-width: 600px){
+    *{
+        font-family: 'Mirza', cursive;
+    }
     #header{
         background-image: url(images/background.jpg);
     }
